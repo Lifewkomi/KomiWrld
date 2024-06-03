@@ -1,0 +1,40 @@
+{
+  "name": "komiwrld",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "framer-motion": "^11.2.10",
+    "gsap": "^3.12.5",
+    "locomotive-scroll": "^4.1.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "5.0.1",
+    "react-social-icons": "^6.16.0",
+    "styled-components": "^6.1.11",
+    "web-vitals": "^4.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
