@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import CoverVideo from '../Components/CoverVideo';
 import Logo from '../Components/Logo';
+import Navbar from '../Components/Navbar';
+
 
 const Section = styled.section
 `
@@ -15,7 +17,7 @@ const Home = () => {
     <Section data-scroll-section>
       <CoverVideo/>
       <Logo />
-      <h1>NavBar</h1>
+      <Navbar />
     </Section>
   );
 }
