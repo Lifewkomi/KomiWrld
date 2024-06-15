@@ -3,8 +3,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 
-const NavContainer = styled(motion.div)
-`
+const NavContainer = styled(motion.div)`
 width: 100vw;
 z-index: 5;
 position: absolute;
@@ -15,8 +14,7 @@ align-items: center;
 transition: all 1s ease;
 `
 
-const MenuItems = styled(motion.li)
-`
+const MenuItems = styled(motion.li)`
 position: relative;
 height: ${props => props.theme.navHeight};
 background-color: ${props => props.theme.body};
@@ -27,11 +25,9 @@ justify-content: space-around;
 align-items: center;
 width: 100%;
 padding: 0 10rem;
-
 `
 
-const MenuBtn = styled.li
-`
+const MenuBtn = styled.li`
 background-color: ${props => `rgba(${props.theme.textRgba},0.7)`};
 list-style-type: style none;
 color: ${props => props.theme.body};
@@ -52,8 +48,7 @@ text-transform: uppercase;
 cursor: pointer;
 `
 
-const MenuItem = styled(motion.li)
-`
+const MenuItem = styled(motion.li)`
 text-transform: uppercase;
 color: ${props => props.theme.text};
 cursor: pointer;

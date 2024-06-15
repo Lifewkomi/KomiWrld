@@ -40,8 +40,7 @@ const textVariants = {
   
 }
 
-const Container = styled.div
-`
+const Container = styled.div`
 position: absolute;
 top: 1rem;
 left: 1rem;
@@ -69,8 +68,7 @@ z-index: 5;
   align-items: flex-end
   }
 `
-const Text = styled(motion.span)
-`
+const Text = styled(motion.span)`
 font-family: 'Sirin stencil';
 font-size: ${props => props.theme.fontlg};
 color: ${props => props.theme.text};

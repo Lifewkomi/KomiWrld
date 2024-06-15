@@ -19,8 +19,7 @@ const container = {
   
 }
 
-const VideoContainer = styled.section
-`
+const VideoContainer = styled.section`
 width: 100%;
 height: 100vh;
 position: relative;
@@ -32,8 +31,7 @@ video{
 }
 `
 
-const Title = styled(motion.div)
-`
+const Title = styled(motion.div)`
 position: absolute;
 top: 0; 
 bottom: 0;
