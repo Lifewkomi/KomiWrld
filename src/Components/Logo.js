@@ -41,33 +41,35 @@ const textVariants = {
 }
 
 const Container = styled.div`
-position: absolute;
-top: 1rem;
-left: 1rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 12%;
+  color: ${(props) => props.theme.text};
+  z-index: 5;
+    @media screen {
+      left: 0;
+    }
 
-width: 12%;
-color: ${props => props.theme.text};
-z-index: 5;
-
-  svg{
-  width: 4rem;
-  height: auto;
-  overflow: visible;
-  stroke-linejoin: round;
-  stroke-linecap: round;
+  svg {
+    width: 4rem;
+    height: auto;
+    overflow: visible;
+    stroke-linejoin: round;
+    stroke-linecap: round;
   }
 
-  g{
-    path{
-      stroke: ${props => props.theme.text};
+  g {
+    path {
+      stroke: ${(props) => props.theme.text};
     }
   }
 
-  a{
-  display: flex;
-  align-items: flex-end
+  a {
+    display: flex;
+    align-items: flex-end;
   }
-`
+`;
 const Text = styled(motion.span)`
 font-family: 'Sirin stencil';
 font-size: ${props => props.theme.fontlg};
