@@ -5,6 +5,7 @@ export const dark = {
     textRgba: '255,255,255',
 
     grey: '#bebebe',
+    menubutton: "#c6d5c6",
 
     fontxs: '0.75em',
     fontsm: '0.875em',

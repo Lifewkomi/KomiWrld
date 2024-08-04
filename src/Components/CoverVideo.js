@@ -12,7 +12,7 @@ const container = {
     opacity: 1,
  
     transition: {
-      delayChildren: 1,
+      delayChildren: 5,
       staggerChildren: 0.3,
     }
   },
@@ -97,7 +97,7 @@ const CoverVideo = () => {
   return (
     <VideoContainer>
       <Title variants={container} initial='hidden' animate='visible'>
-        <div>
+        {/* <div>
           <motion.h1 variants={item} data-scroll data-scroll-delay='0.15' data-scroll-speed='4' >K</motion.h1>
           <motion.h1 variants={item} data-scroll data-scroll-delay='0.13' data-scroll-speed='4' >o</motion.h1>
           <motion.h1 variants={item} data-scroll data-scroll-delay='0.11' data-scroll-speed='4' >m</motion.h1>
@@ -107,10 +107,10 @@ const CoverVideo = () => {
           <motion.h1 variants={item} data-scroll data-scroll-delay='0.03' data-scroll-speed='4' >l</motion.h1>
           <motion.h1 variants={item} data-scroll data-scroll-delay='0.02' data-scroll-speed='4' >d</motion.h1>
 
-        </div>
+        </div> */}
         <h2  data-scroll data-scroll-delay='0.04' data-scroll-speed='2' >Live Surrealistic. Dream Grotesque. Inspire.</h2>
       </Title>
-      <video src={MainVideo} type="video/mp4" muted autoPlay loop />
+      <video priority src={MainVideo} type="video/mp4" muted autoPlay loop />
     </VideoContainer>
   );
 }

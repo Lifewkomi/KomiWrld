@@ -56,8 +56,7 @@ const Container = styled.div`
     height: auto;
     overflow: visible;
     stroke-linejoin: round;
-    stroke-linecap: round;
-  }
+    stroke-linecap: round;  }
 
   g {
     path {
@@ -75,8 +74,6 @@ font-family: 'Sirin stencil';
 font-size: ${props => props.theme.fontlg};
 color: ${props => props.theme.text};
 padding-bottom: 0.5rem;
-
-
 `
 
 const Logo = () => {

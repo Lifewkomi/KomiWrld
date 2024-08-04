@@ -32,7 +32,8 @@ padding: 0 10rem;
 `
 
 const MenuBtn = styled.li`
-background-color: ${props => `rgba(${props.theme.textRgba},0.7)`};
+/* background-color: ${props => `rgba(${props.theme.textRgba},0.7)`}; */
+background-color: ${props => props.theme.menubutton};
 list-style-type: style none;
 color: ${props => props.theme.body};
 
