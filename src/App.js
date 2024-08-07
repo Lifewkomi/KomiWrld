@@ -1,5 +1,5 @@
 import { ThemeProvider } from 'styled-components';
-import GlobalStyles from './Styles/GlobalStyles'
+import GlobalStyles from './Styles/GlobalStyles';
 import { dark } from './Styles/Themes';
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll';
 import { useState, useRef, useEffect } from 'react';
@@ -12,37 +12,30 @@ import Loader from './Components/Loader';
 
 function App() {
   const containerRef = useRef(null);
-  
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
       setLoaded(true);
-    }, 3000, "easeInOut");
-  }, [])
-  
+    }, 3000);
+  }, []);
 
   return (
     <>
       <GlobalStyles />
-
       <ThemeProvider theme={dark}>
         <LocomotiveScrollProvider
-          options={{
-            smooth: true,
-          }}
+          options={{ smooth: true }}
           watch={[]}
           containerRef={containerRef}
         >
           <AnimatePresence>
-            {loaded ? null : <Loader /> }
+            {!loaded && <Loader />}
           </AnimatePresence>
-          {/* <Loader /> */}
-          
           <AnimatePresence mode="wait">
             <main className='App' data-scroll-container ref={containerRef}>
               <Home />
-              <About /> 
+              {/* <About /> */}
             </main>
           </AnimatePresence>
         </LocomotiveScrollProvider>
